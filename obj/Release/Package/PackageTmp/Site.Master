@@ -1,0 +1,268 @@
+﻿<%@ Master Language="VB" AutoEventWireup="true" CodeBehind="Site.master.vb" Inherits="realapp.SiteMaster" %>
+
+<%@ Import Namespace="realapp" %>
+<%@ Import Namespace="Microsoft.AspNet.Identity" %>
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+
+    
+    <asp:ContentPlaceHolder ID="head" runat="server">
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script type="text/javascript" src="App_Data/bootstrap-wysiwyg.js"></script>      
+    </asp:ContentPlaceHolder>
+
+    <style type="text/css">        
+        .navbar-brand,        
+        .navbar-nav li a {
+            line-height: 40px;
+            height: 40px;
+            padding-top: 0;
+            font-size: 1.2em !important;
+        }
+    </style>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%: Page.Title %> - Real App</title>
+
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>
+
+    <webopt:bundlereference runat="server" path="~/Content/css" />
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+    <link href="~/Content/bootstrap-sandstone.css" rel="stylesheet" type="text/css" runat="server" />
+
+</head>
+<body>
+    <form runat="server">
+        <asp:ScriptManager runat="server">
+            <Scripts>
+                <%--To learn more about bundling scripts in ScriptManager see https://go.microsoft.com/fwlink/?LinkID=301884 --%>
+                <%--Framework Scripts--%>
+                <asp:ScriptReference Name="MsAjaxBundle" />
+                <asp:ScriptReference Name="jquery" />
+                <asp:ScriptReference Name="bootstrap" />
+                <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
+                <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
+                <asp:ScriptReference Name="MenuStandards.js" Assembly="System.Web" Path="~/Scripts/WebForms/MenuStandards.js" />
+                <asp:ScriptReference Name="GridView.js" Assembly="System.Web" Path="~/Scripts/WebForms/GridView.js" />
+                <asp:ScriptReference Name="DetailsView.js" Assembly="System.Web" Path="~/Scripts/WebForms/DetailsView.js" />
+                <asp:ScriptReference Name="TreeView.js" Assembly="System.Web" Path="~/Scripts/WebForms/TreeView.js" />
+                <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
+                <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
+                <asp:ScriptReference Name="WebFormsBundle" />
+                <%--Site Scripts--%>
+            </Scripts>
+        </asp:ScriptManager>
+
+         <div class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" runat="server" href="~/">Real App</a>
+
+                </div>
+                <div class="navbar-collapse collapse">
+                    <asp:LoginView runat="server" ViewStateMode="Enabled">
+
+                        <LoggedInTemplate>
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a runat="server" href="#" title="Manage your account">Ola, <%: Context.User.Identity.Name %>!</a></li>
+                                <li>
+                                    <asp:LoginStatus runat="server" LogoutAction="Redirect" LogoutText="Sair" LogoutPageUrl="~/Account/Login" OnLoggingOut="Unnamed_LoggingOut" />
+                                </li>
+                            </ul>
+                        </LoggedInTemplate>
+                        <AnonymousTemplate>
+                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                <ul class="nav navbar-nav">
+                                    <!--  <li><a runat="server" href="~/">Home</a></li> -->
+                                </ul>
+                                <ul class="nav navbar-nav navbar-right">
+                                    <!-- <li><a runat="server" href="~/Account/Login">Log in</a></li>
+                                <li><a runat="server" href="~/Account/Register">Registo</a></li>    -->
+                                </ul>
+                            </div>
+                        </AnonymousTemplate>
+
+                        <RoleGroups>
+                            <asp:RoleGroup Roles="Administrador">
+                                <ContentTemplate>
+                                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                        <ul class="nav navbar-nav">
+                                            <li class="dropdown">
+                                                <a runat="server" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span style="font-size:18px;">Entidade</span></a>
+                                                <ul class="dropdown-menu" role="menu">
+                                                    <li><a runat="server" href="AdicionarEntidade.aspx">Adicionar Entidade</a></li>
+                                                    <li><a runat="server" href="AdicionarContacto.aspx">Adicionar Contacto</a></li>
+                                                    <%--<li><a runat="server" href="AdicionarProducao.aspx">Adicionar Produção</a></li>
+                                                    <li><a runat="server" href="AdicionarResultado.aspx">Adicionar Resultado</a></li>
+                                                    <li><a runat="server" href="ConsultarProducao.aspx">Consultar Produção</a></li>--%>
+                                                    <li><a runat="server" href="ConsultarClientes.aspx">Consultar Entidade</a></li>
+
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown">
+                                                <a runat="server" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span style="font-size:18px;">Promoção</span></a>
+                                                <ul class="dropdown-menu" role="menu">
+                                                    <li><a runat="server" href="Apresentacoes.aspx">Apresentações</a></li>
+                                                    <%--<li><a runat="server" href="Promocoes.aspx">Promoções</a></li>--%>
+                                                    <li><a runat="server" href="Vouchers.aspx">Vouchers</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a runat="server" href="Fotografias.aspx"><span style="font-size:18px;">Fotografias</span></a></li>
+                                            <li class="dropdown">
+                                                <a runat="server" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span style="font-size:18px;">Visita</span></a>
+                                                <ul class="dropdown-menu" role="menu">
+                                                    <li><a runat="server" href="~/AdicionarEvento.aspx">Adicionar Evento</a></li>
+                                                    <li><a runat="server" href="~/AdicionarViagens.aspx">Adicionar Viagem</a></li>
+                                                    <li><a runat="server" href="~/AdicionarVisita.aspx">Adicionar Visita</a></li>
+                                                    <li><a runat="server" href="~/ConsultaEvento.aspx">Consultar Evento</a></li>
+                                                    <li><a runat="server" href="~/ConsultarViagens.aspx">Consultar Viagens</a></li>
+                                                    <li><a runat="server" href="~/ConsultarVisitas.aspx">Consultar Visitas</a></li>
+                                                    <li><a runat="server" href="PosVisita.aspx">Pós Visita</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown">
+                                                <a runat="server" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span style="font-size:18px;">Leads</span></a>
+                                                <ul class="dropdown-menu" role="menu">
+                                                    <li><a runat="server" href="~/AdicionarLeads.aspx">Adicionar Leads</a></li>
+                                                    <li class="disabled"><a runat="server" href="#">Adicionar Proposta</a></li>
+                                                    <li class="disabled"><a runat="server" href="#">Adicionar Resultados</a></li>
+                                                    <li><a runat="server" href="~/ConsultaLeads.aspx">Consultar Leads</a></li>
+                                                    <li class="disabled"><a runat="server" href="#">Consultar Propostas</a></li>
+                                                    <li class="disabled"><a runat="server" href="#">Consultar Resultados</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown">
+                                                <a runat="server" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span style="font-size:18px;">Reports</span></a>
+                                                <ul class="dropdown-menu" role="menu">
+                                                    <li><a runat="server" href="~/EstatisticaLeads.aspx">Estatistica Leads</a></li>
+                                                    <li class="disabled"><a runat="server" href="#">Estatistica Receita (‎€)</a></li>
+                                                    <li class="disabled"><a runat="server" href="#">Estatistica Top</a></li>
+                                                    <li class="disabled"><a runat="server" href="#">Estatistica Revenue (%)</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+
+                                        <ul class="nav navbar-nav navbar-right">
+                                            <li><a runat="server" href="#" title="Manage your account"><span style="font-size:18px;">Olá, <%: Context.User.Identity.Name %>!</span></a></li>
+                                            <li>
+                                                <asp:LoginStatus runat="server" LogoutAction="Redirect" LogoutText="Sair" LogoutPageUrl="~/Account/Login" OnLoggingOut="Unnamed_LoggingOut" Font-Size="Large" />
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </ContentTemplate>
+                            </asp:RoleGroup>
+                            <asp:RoleGroup Roles="Supervisor">
+                                <ContentTemplate>
+                                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                        <ul class="nav navbar-nav">
+                                           <li class="dropdown">
+                                                <a runat="server" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span style="font-size:18px;">Pais e Cidade</span></a>
+                                                <ul class="dropdown-menu" role="menu">
+                                                    <li class="disabled"><a runat="server" href="~/AdicionarPais.aspx">Adicionar Pais</a></li>
+                                                    <li class="disabled"><a runat="server" href="~/AdicionarCidade.aspx">Adicionar Cidade</a></li>                                                    
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown">
+                                                <a runat="server" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span style="font-size:18px;">Tarifas</span></a>
+                                                <ul class="dropdown-menu" role="menu">
+                                                    <li><a runat="server" href="~/AdicionarTarifas.aspx">Adicionar Tarifas</a></li>
+                                                    <li><a runat="server" href="~/ConsultarTarifas.aspx">Consultar Tarifas</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+
+                                        <ul class="nav navbar-nav navbar-right">
+                                            <li><a runat="server" href="#" title="Manage your account"><span style="font-size:18px;">Olá, <%: Context.User.Identity.Name %>!</span></a></li>
+                                            <li>
+                                                <asp:LoginStatus runat="server" LogoutAction="Redirect" LogoutText="Sair" LogoutPageUrl="~/Account/Login" OnLoggingOut="Unnamed_LoggingOut" Font-Size="Large" />
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </ContentTemplate>
+                            </asp:RoleGroup>
+                            <asp:RoleGroup Roles="Utilizador">
+                                <ContentTemplate>
+                                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                        <ul class="nav navbar-nav">
+                                            <li class="dropdown">
+                                                <a runat="server" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span style="font-size:18px;">Entidade</span></a>
+                                                <ul class="dropdown-menu" role="menu">
+                                                    <li><a runat="server" href="AdicionarEntidade.aspx">Adicionar Entidade</a></li>
+                                                    <li><a runat="server" href="AdicionarContacto.aspx">Adicionar Contacto</a></li>
+                                                    <li><a runat="server" href="ConsultarClientes.aspx">Consultar Entidade</a></li>
+
+                                                </ul>
+                                            </li>
+                                            <%--<li class="dropdown">
+                                                <a runat="server" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Promoção</a>
+                                                <ul class="dropdown-menu" role="menu">
+                                                    <li><a runat="server" href="Apresentacoes.aspx">Apresentações</a></li>
+                                                    <li><a runat="server" href="Promocoes.aspx">Promoções</a></li>
+                                                    <li><a runat="server" href="Vouchers.aspx">Vouchers</a></li>
+                                                </ul>
+                                            </li>--%>
+                                            <li><a runat="server" href="Galeria.aspx"><span style="font-size:18px;">Galeria</span></a></li>
+                                            <li class="dropdown">
+                                                <a runat="server" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span style="font-size:18px;">Visita</span></a>
+                                                <ul class="dropdown-menu" role="menu">
+                                                    <li><a runat="server" href="~/AdicionarEvento.aspx">Adicionar Evento</a></li>
+                                                    <li><a runat="server" href="~/AdicionarViagens.aspx">Adicionar Viagem</a></li>
+                                                    <li><a runat="server" href="~/AdicionarVisita.aspx">Adicionar Visita</a></li>
+                                                    <li><a runat="server" href="~/ConsultaEvento.aspx">Consultar Evento</a></li>
+                                                    <li><a runat="server" href="~/ConsultarViagens.aspx">Consultar Viagens</a></li>
+                                                    <li><a runat="server" href="~/ConsultarVisitas.aspx">Consultar Visitas</a></li>
+                                                    <li><a runat="server" href="PosVisita.aspx">Pós Visita</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown">
+                                                <a runat="server" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span style="font-size:18px;">Leads</span></a>
+                                                <ul class="dropdown-menu" role="menu">
+                                                    <li><a runat="server" href="~/AdicionarLeads.aspx">Adicionar Leads</a></li>
+
+                                                    <%--                                                    <li><a runat="server" href="~/AdicionarProposta.aspx">Adicionar Proposta</a></li>
+                                                    <li><a runat="server" href="~/AdicionarResultados.aspx">Adicionar Resultados</a></li>--%>
+                                                    <li><a runat="server" href="~/ConsultaLeads.aspx">Consultar Leads</a></li>
+                                                    <%--                                                    <li><a runat="server" href="~/ConsultaProposta.aspx">Consultar Propostas</a></li>
+                                                    <li><a runat="server" href="~/ConsultarResultados.aspx">Consultar Resultados</a></li>--%>
+                                                </ul>
+                                            </li>
+                                        </ul>
+
+                                        <ul class="nav navbar-nav navbar-right">
+                                            <li><a runat="server" href="#" title="Manage your account"><span style="font-size:18px;">Olá, <%: Context.User.Identity.Name %>!</span></a></li>
+                                            <li>
+                                                <asp:LoginStatus runat="server" LogoutAction="Redirect" LogoutText="Sair" LogoutPageUrl="~/Account/Login" OnLoggingOut="Unnamed_LoggingOut" Font-Size="Large" />
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </ContentTemplate>
+                            </asp:RoleGroup>
+                        </RoleGroups>
+
+                    </asp:LoginView>
+                </div>
+            </div>
+        </div>
+        <div class="container body-content">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+            <hr />
+            <footer>
+                   <p><span style="color:#000000"> &copy; <%: DateTime.Now.Year %></span> <a href='http://www.realhotelsgroup.com/pt' style="color:#000000" target="_blank">Real Hotels Group</a></p>
+            </footer>
+        </div>
+    </form>
+</body>
+</html>

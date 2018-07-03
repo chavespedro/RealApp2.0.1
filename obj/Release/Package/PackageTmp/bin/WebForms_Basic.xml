@@ -1,0 +1,1051 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+realapp
+</name>
+</assembly>
+<members>
+<member name="T:realapp.My.MyWebExtension">
+ <summary>
+ Módulo usado para definir as propriedades que estão disponíveis em My Namespace para projetos da web.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:realapp.My.MyWebExtension.Computer">
+ <summary>
+ Retorna informações sobre o computador host.
+ </summary>
+</member>
+<member name="P:realapp.My.MyWebExtension.User">
+ <summary>
+ Retorna informações sobre o usuário atual da web.
+ </summary>
+</member>
+<member name="P:realapp.My.MyWebExtension.Request">
+ <summary>
+ Retorna um objeto Request.
+ </summary>
+</member>
+<member name="P:realapp.My.MyWebExtension.Response">
+ <summary>
+ Retorna um objeto Response.
+ </summary>
+</member>
+<member name="P:realapp.My.MyWebExtension.Log">
+ <summary>
+ Retorna o objeto de log Asp.
+ </summary>
+</member>
+<member name="F:realapp.AddPhoneNumber._ErrorMessage">
+<summary>
+Controle ErrorMessage.
+</summary>
+<remarks>
+Campo gerado automaticamente.
+Para modificar, mova a declaração de campo do arquivo do Designer para o arquivo code-behind.
+</remarks>
+</member>
+<member name="F:realapp.AddPhoneNumber._PhoneNumber">
+<summary>
+Controle PhoneNumber.
+</summary>
+<remarks>
+Campo gerado automaticamente.
+Para modificar, mova a declaração de campo do arquivo do Designer para o arquivo code-behind.
+</remarks>
+</member>
+<member name="F:realapp.Confirm._successPanel">
+<summary>
+Controle successPanel.
+</summary>
+<remarks>
+Campo gerado automaticamente.
+Para modificar, mova a declaração de campo do arquivo do Designer para o arquivo code-behind.
+</remarks>
+</member>
+<member name="F:realapp.Confirm._login">
+<summary>
+controle de login.
+</summary>
+<remarks>
+Campo gerado automaticamente.
+Para modificar, mova a declaração de campo do arquivo do Designer para o arquivo code-behind.
+</remarks>
+</member>
+<member name="F:realapp.Confirm._errorPanel">
+<summary>
+Controle errorPanel.
+</summary>
+<remarks>
+Campo gerado automaticamente.
+Para modificar, mova a declaração de campo do arquivo do Designer para o arquivo code-behind.
+</remarks>
+</member>
+<member name="F:realapp.ForgotPassword._loginForm">
+<summary>
+Controle loginForm.
+</summary>
+<remarks>
+Campo gerado automaticamente.
+Para modificar, mova a declaração de campo do arquivo do Designer para o arquivo code-behind.
+</remarks>
+</member>
+<member name="F:realapp.ForgotPassword._ErrorMessage">
+<summary>
+Controle ErrorMessage.
+</summary>
+<remarks>
+Campo gerado automaticamente.
+Para modificar, mova a declaração de campo do arquivo do Designer para o arquivo code-behind.
+</remarks>
+</member>
+<member name="F:realapp.ForgotPassword._FailureText">
+<summary>
+Controle FailureText.
+</summary>
+<remarks>
+Campo gerado automaticamente.
+Para modificar, mova a declaração de campo do arquivo do Designer para o arquivo code-behind.
+</remarks>
+</member>
+<member name="F:realapp.ForgotPassword._Email">
+<summary>
+ Controle Email.
+</summary>
+<remarks>
+Campo gerado automaticamente.
+Para modificar, mova a declaração de campo do arquivo do Designer para o arquivo code-behind.
+</remarks>
+</member>
+<member name="F:realapp.ForgotPassword._DisplayEmail">
+<summary>
+Controle DisplayEmail.
+</summary>
+<remarks>
+Campo gerado automaticamente.
+Para modificar, mova a declaração de campo do arquivo do Designer para o arquivo code-behind.
+</remarks>
+</member>
+<member name="F:realapp.Login._logohoteisreal">
+<summary>
+Controle logohoteisreal.
+</summary>
+<remarks>
+Campo gerado automaticamente.
+Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+</remarks>
+</member>
+<member name="F:realapp.Login._ErrorMessage">
+<summary>
+Controle ErrorMessage.
+</summary>
+<remarks>
+Campo gerado automaticamente.
+Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+</remarks>
+</member>
+<member name="F:realapp.Login._FailureText">
+<summary>
+Controle FailureText.
+</summary>
+<remarks>
+Campo gerado automaticamente.
+Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+</remarks>
+</member>
+<member name="F:realapp.Login._Email">
+<summary>
+Controle Email.
+</summary>
+<remarks>
+Campo gerado automaticamente.
+Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+</remarks>
+</member>
+<member name="F:realapp.Login._Password">
+<summary>
+Controle Password.
+</summary>
+<remarks>
+Campo gerado automaticamente.
+Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+</remarks>
+</member>
+<member name="F:realapp.Login._RememberMe">
+<summary>
+Controle RememberMe.
+</summary>
+<remarks>
+Campo gerado automaticamente.
+Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+</remarks>
+</member>
+<member name="F:realapp.Login._RegisterHyperLink">
+<summary>
+Controle RegisterHyperLink.
+</summary>
+<remarks>
+Campo gerado automaticamente.
+Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+</remarks>
+</member>
+<member name="F:realapp.Login._OpenAuthLogin">
+<summary>
+Controle OpenAuthLogin.
+</summary>
+<remarks>
+Campo gerado automaticamente.
+Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+</remarks>
+</member>
+<member name="F:realapp.Manage._SuccessMessagePlaceHolder">
+ <summary>
+ controle SuccessMessagePlaceHolder.
+ </summary>
+ <remarks>
+ Campo gerado automaticamente.
+ Para modificar, mova a declaração de campo do arquivo do designer para o arquivo code-behind.
+ </remarks>
+</member>
+<member name="F:realapp.Manage._ChangePassword">
+ <summary>
+ Controle ChangePassword.
+ </summary>
+ <remarks>
+ Campo gerado automaticamente.
+ Para modificar, mova a declaração de campo do arquivo do designer para o arquivo code-behind.
+ </remarks>
+</member>
+<member name="F:realapp.Manage._CreatePassword">
+ <summary>
+ Controle CreatePassword.
+ </summary>
+ <remarks>
+ Campo gerado automaticamente.
+ Para modificar, mova a declaração de campo do arquivo do designer para o arquivo code-behind.
+ </remarks>
+</member>
+<member name="F:realapp.Manage._PhoneNumber">
+ <summary>
+ Controle PhoneNumber.
+ </summary>
+ <remarks>
+ Campo gerado automaticamente.
+ Para modificar, mova a declaração de campo do arquivo do designer para o arquivo code-behind.
+ </remarks>
+</member>
+<member name="F:realapp.ManageLogins._SuccessMessagePlaceholder">
+<summary>
+Controle SuccessMessagePlaceholder.
+</summary>
+<remarks>
+Campo gerado automaticamente.
+Para modificar, mova a declaração de campo do arquivo do Designer para o arquivo code-behind.
+</remarks>
+</member>
+<member name="F:realapp.ManagePassword._setPassword">
+<summary>
+Controle setPassword.
+</summary>
+<remarks>
+Campo gerado automaticamente.
+Para modificar, mova a declaração de campo do arquivo do Designer para o arquivo code-behind.
+</remarks>
+</member>
+<member name="F:realapp.ManagePassword._password">
+<summary>
+Controle password.
+</summary>
+<remarks>
+Campo gerado automaticamente.
+Para modificar, mova a declaração de campo do arquivo do Designer para o arquivo code-behind.
+</remarks>
+</member>
+<member name="F:realapp.ManagePassword._confirmPassword">
+<summary>
+controle confirmPassword.
+</summary>
+<remarks>
+Campo gerado automaticamente.
+Para modificar, mova a declaração de campo do arquivo do Designer para o arquivo code-behind.
+</remarks>
+</member>
+<member name="F:realapp.ManagePassword._changePasswordHolder">
+<summary>
+Controle changePasswordHolder.
+</summary>
+<remarks>
+Campo gerado automaticamente.
+Para modificar, mova a declaração de campo do arquivo do Designer para o arquivo code-behind.
+</remarks>
+</member>
+<member name="F:realapp.ManagePassword._CurrentPasswordLabel">
+<summary>
+Controle CurrentPasswordLabel.
+</summary>
+<remarks>
+Campo gerado automaticamente.
+Para modificar, mova a declaração de campo do arquivo do Designer para o arquivo code-behind.
+</remarks>
+</member>
+<member name="F:realapp.ManagePassword._CurrentPassword">
+<summary>
+Controle CurrentPassword.
+</summary>
+<remarks>
+Campo gerado automaticamente.
+Para modificar, mova a declaração de campo do arquivo do Designer para o arquivo code-behind.
+</remarks>
+</member>
+<member name="F:realapp.ManagePassword._NewPasswordLabel">
+<summary>
+Controle NewPasswordLabel.
+</summary>
+<remarks>
+Campo gerado automaticamente.
+Para modificar, mova a declaração de campo do arquivo do Designer para o arquivo code-behind.
+</remarks>
+</member>
+<member name="F:realapp.ManagePassword._NewPassword">
+<summary>
+Controle NewPassword.
+</summary>
+<remarks>
+Campo gerado automaticamente.
+Para modificar, mova a declaração de campo do arquivo do Designer para o arquivo code-behind.
+</remarks>
+</member>
+<member name="F:realapp.ManagePassword._ConfirmNewPasswordLabel">
+<summary>
+Controle ConfirmNewPasswordLabel.
+</summary>
+<remarks>
+Campo gerado automaticamente.
+Para modificar, mova a declaração de campo do arquivo do Designer para o arquivo code-behind.
+</remarks>
+</member>
+<member name="F:realapp.ManagePassword._ConfirmNewPassword">
+<summary>
+Controle ConfirmNewPassword.
+</summary>
+<remarks>
+Campo gerado automaticamente.
+Para modificar, mova a declaração de campo do arquivo do Designer para o arquivo code-behind.
+</remarks>
+</member>
+<member name="F:realapp.OpenAuthProviders._providerDetails">
+<summary>
+Controle de providerDetails.
+</summary>
+<remarks>
+Campo gerado automaticamente.
+Para modificar, mova a declaração de campo do arquivo do designer para o arquivo code-behind.
+</remarks>
+</member>
+<member name="F:realapp.Register._ErrorMessage">
+<summary>
+Controle ErrorMessage.
+</summary>
+<remarks>
+Campo gerado automaticamente.
+Para modificar, mova a declaração de campo do arquivo do designer para o arquivo code-behind.
+</remarks>
+</member>
+<member name="F:realapp.Register._Email">
+<summary>
+ Controle Email.
+</summary>
+<remarks>
+Campo gerado automaticamente.
+Para modificar, mova a declaração de campo do arquivo do designer para o arquivo code-behind.
+</remarks>
+</member>
+<member name="F:realapp.Register._Password">
+<summary>
+Controle Password.
+</summary>
+<remarks>
+Campo gerado automaticamente.
+Para modificar, mova a declaração de campo do arquivo do designer para o arquivo code-behind.
+</remarks>
+</member>
+<member name="F:realapp.Register._ConfirmPassword">
+<summary>
+Controle ConfirmPassword.
+</summary>
+<remarks>
+Campo gerado automaticamente.
+Para modificar, mova a declaração de campo do arquivo do designer para o arquivo code-behind.
+</remarks>
+</member>
+<member name="F:realapp.RegisterExternalLogin._email">
+<summary>
+ controle email.
+</summary>
+<remarks>
+Campo gerado automaticamente.
+Para modificar, mova a declaração de campo do arquivo do designer para o arquivo code-behind.
+</remarks>
+</member>
+<member name="F:realapp.ResetPassword._ErrorMessage">
+<summary>
+Controle ErrorMessage.
+</summary>
+<remarks>
+Campo gerado automaticamente.
+Para modificar, mova a declaração de campo do arquivo do Designer para o arquivo code-behind.
+</remarks>
+</member>
+<member name="F:realapp.ResetPassword._Email">
+<summary>
+ Controle Email.
+</summary>
+<remarks>
+Campo gerado automaticamente.
+Para modificar, mova a declaração de campo do arquivo do Designer para o arquivo code-behind.
+</remarks>
+</member>
+<member name="F:realapp.ResetPassword._Password">
+<summary>
+Controle Password.
+</summary>
+<remarks>
+Campo gerado automaticamente.
+Para modificar, mova a declaração de campo do arquivo do Designer para o arquivo code-behind.
+</remarks>
+</member>
+<member name="F:realapp.ResetPassword._ConfirmPassword">
+<summary>
+Controle ConfirmPassword.
+</summary>
+<remarks>
+Campo gerado automaticamente.
+Para modificar, mova a declaração de campo do arquivo do Designer para o arquivo code-behind.
+</remarks>
+</member>
+<member name="F:realapp.ResetPasswordConfirmation._login">
+<summary>
+controle de login.
+</summary>
+<remarks>
+Campo gerado automaticamente.
+Para modificar, mova a declaração de campo do arquivo do Designer para o arquivo code-behind.
+</remarks>
+</member>
+<member name="F:realapp.TwoFactorAuthenticationSignIn._sendcode">
+<summary>
+Controle sendcode.
+</summary>
+<remarks>
+Campo gerado automaticamente.
+Para modificar, mova a declaração de campo do arquivo do Designer para o arquivo code-behind.
+</remarks>
+</member>
+<member name="F:realapp.TwoFactorAuthenticationSignIn._Providers">
+<summary>
+Controle Providers.
+</summary>
+<remarks>
+Campo gerado automaticamente.
+Para modificar, mova a declaração de campo do arquivo do Designer para o arquivo code-behind.
+</remarks>
+</member>
+<member name="F:realapp.TwoFactorAuthenticationSignIn._ProviderSubmit">
+<summary>
+Controle ProviderSubmit.
+</summary>
+<remarks>
+Campo gerado automaticamente.
+Para modificar, mova a declaração de campo do arquivo do Designer para o arquivo code-behind.
+</remarks>
+</member>
+<member name="F:realapp.TwoFactorAuthenticationSignIn._verifycode">
+<summary>
+Controle verifycode.
+</summary>
+<remarks>
+Campo gerado automaticamente.
+Para modificar, mova a declaração de campo do arquivo do Designer para o arquivo code-behind.
+</remarks>
+</member>
+<member name="F:realapp.TwoFactorAuthenticationSignIn._SelectedProvider">
+<summary>
+Controle SelectedProvider.
+</summary>
+<remarks>
+Campo gerado automaticamente.
+Para modificar, mova a declaração de campo do arquivo do Designer para o arquivo code-behind.
+</remarks>
+</member>
+<member name="F:realapp.TwoFactorAuthenticationSignIn._ErrorMessage">
+<summary>
+Controle ErrorMessage.
+</summary>
+<remarks>
+Campo gerado automaticamente.
+Para modificar, mova a declaração de campo do arquivo do Designer para o arquivo code-behind.
+</remarks>
+</member>
+<member name="F:realapp.TwoFactorAuthenticationSignIn._FailureText">
+<summary>
+Controle FailureText.
+</summary>
+<remarks>
+Campo gerado automaticamente.
+Para modificar, mova a declaração de campo do arquivo do Designer para o arquivo code-behind.
+</remarks>
+</member>
+<member name="F:realapp.TwoFactorAuthenticationSignIn._Code">
+<summary>
+Controle Code.
+</summary>
+<remarks>
+Campo gerado automaticamente.
+Para modificar, mova a declaração de campo do arquivo do Designer para o arquivo code-behind.
+</remarks>
+</member>
+<member name="F:realapp.TwoFactorAuthenticationSignIn._RememberBrowser">
+<summary>
+Controle RememberBrowser.
+</summary>
+<remarks>
+Campo gerado automaticamente.
+Para modificar, mova a declaração de campo do arquivo do Designer para o arquivo code-behind.
+</remarks>
+</member>
+<member name="F:realapp.TwoFactorAuthenticationSignIn._CodeSubmit">
+<summary>
+Controle CodeSubmit.
+</summary>
+<remarks>
+Campo gerado automaticamente.
+Para modificar, mova a declaração de campo do arquivo do Designer para o arquivo code-behind.
+</remarks>
+</member>
+<member name="F:realapp.VerifyPhoneNumber._ErrorMessage">
+<summary>
+Controle ErrorMessage.
+</summary>
+<remarks>
+Campo gerado automaticamente.
+Para modificar, mova a declaração de campo do arquivo do Designer para o arquivo code-behind.
+</remarks>
+</member>
+<member name="F:realapp.VerifyPhoneNumber._PhoneNumber">
+<summary>
+Controle PhoneNumber.
+</summary>
+<remarks>
+Campo gerado automaticamente.
+Para modificar, mova a declaração de campo do arquivo do Designer para o arquivo code-behind.
+</remarks>
+</member>
+<member name="F:realapp.VerifyPhoneNumber._Code">
+<summary>
+Controle Code.
+</summary>
+<remarks>
+Campo gerado automaticamente.
+Para modificar, mova a declaração de campo do arquivo do Designer para o arquivo code-behind.
+</remarks>
+</member>
+<member name="F:realapp.AdicionarTarifas._dropAno">
+<summary>
+Controle dropAno.
+</summary>
+<remarks>
+Campo gerado automaticamente.
+Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+</remarks>
+</member>
+<member name="F:realapp.AdicionarTarifas._SqlDataSource5">
+<summary>
+Controle SqlDataSource5.
+</summary>
+<remarks>
+Campo gerado automaticamente.
+Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+</remarks>
+</member>
+<member name="F:realapp.AdicionarTarifas._dropEpoca">
+<summary>
+Controle dropEpoca.
+</summary>
+<remarks>
+Campo gerado automaticamente.
+Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+</remarks>
+</member>
+<member name="F:realapp.AdicionarTarifas._SqlDataSource2">
+<summary>
+Controle SqlDataSource2.
+</summary>
+<remarks>
+Campo gerado automaticamente.
+Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+</remarks>
+</member>
+<member name="F:realapp.AdicionarTarifas._dropTipologia">
+<summary>
+Controle dropTipologia.
+</summary>
+<remarks>
+Campo gerado automaticamente.
+Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+</remarks>
+</member>
+<member name="F:realapp.AdicionarTarifas._SqlDataSource3">
+<summary>
+Controle SqlDataSource3.
+</summary>
+<remarks>
+Campo gerado automaticamente.
+Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+</remarks>
+</member>
+<member name="F:realapp.AdicionarTarifas._dropHoteis">
+<summary>
+Controle dropHoteis.
+</summary>
+<remarks>
+Campo gerado automaticamente.
+Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+</remarks>
+</member>
+<member name="F:realapp.AdicionarTarifas._SqlDataSource4">
+<summary>
+Controle SqlDataSource4.
+</summary>
+<remarks>
+Campo gerado automaticamente.
+Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+</remarks>
+</member>
+<member name="F:realapp.AdicionarTarifas._txtTarifa">
+<summary>
+Controle txtTarifa.
+</summary>
+<remarks>
+Campo gerado automaticamente.
+Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+</remarks>
+</member>
+<member name="F:realapp.AdicionarTarifas._txtValor">
+<summary>
+Controle txtValor.
+</summary>
+<remarks>
+Campo gerado automaticamente.
+Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+</remarks>
+</member>
+<member name="F:realapp.AdicionarTarifas._txtObservacoes">
+<summary>
+Controle txtObservacoes.
+</summary>
+<remarks>
+Campo gerado automaticamente.
+Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+</remarks>
+</member>
+<member name="F:realapp.AdicionarTarifas._AdicionarTarifa">
+<summary>
+Controle AdicionarTarifa.
+</summary>
+<remarks>
+Campo gerado automaticamente.
+Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+</remarks>
+</member>
+<member name="F:realapp.AdicionarTarifas._SqlDataSource1">
+<summary>
+Controle SqlDataSource1.
+</summary>
+<remarks>
+Campo gerado automaticamente.
+Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+</remarks>
+</member>
+<member name="F:realapp.ConsultarTarifas._dropAno">
+<summary>
+Controle dropAno.
+</summary>
+<remarks>
+Campo gerado automaticamente.
+Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+</remarks>
+</member>
+<member name="F:realapp.ConsultarTarifas._SqlDataSource5">
+<summary>
+Controle SqlDataSource5.
+</summary>
+<remarks>
+Campo gerado automaticamente.
+Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+</remarks>
+</member>
+<member name="F:realapp.ConsultarTarifas._dropHoteis">
+<summary>
+Controle dropHoteis.
+</summary>
+<remarks>
+Campo gerado automaticamente.
+Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+</remarks>
+</member>
+<member name="F:realapp.ConsultarTarifas._SqlDataSource4">
+<summary>
+Controle SqlDataSource4.
+</summary>
+<remarks>
+Campo gerado automaticamente.
+Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+</remarks>
+</member>
+<member name="F:realapp.ConsultarTarifas._dropEpoca">
+<summary>
+Controle dropEpoca.
+</summary>
+<remarks>
+Campo gerado automaticamente.
+Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+</remarks>
+</member>
+<member name="F:realapp.ConsultarTarifas._SqlDataSource2">
+<summary>
+Controle SqlDataSource2.
+</summary>
+<remarks>
+Campo gerado automaticamente.
+Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+</remarks>
+</member>
+<member name="F:realapp.ConsultarTarifas._GridView1">
+<summary>
+Controle GridView1.
+</summary>
+<remarks>
+Campo gerado automaticamente.
+Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+</remarks>
+</member>
+<member name="F:realapp.ConsultarTarifas._SqlDataSource1">
+<summary>
+Controle SqlDataSource1.
+</summary>
+<remarks>
+Campo gerado automaticamente.
+Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+</remarks>
+</member>
+<member name="F:realapp._Default._LoginView1">
+<summary>
+Controle LoginView1.
+</summary>
+<remarks>
+Campo gerado automaticamente.
+Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+</remarks>
+</member>
+<member name="F:realapp._Default._calTraining">
+<summary>
+Controle calTraining.
+</summary>
+<remarks>
+Campo gerado automaticamente.
+Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+</remarks>
+</member>
+<member name="F:realapp._Default._SqlDataSource1">
+<summary>
+Controle SqlDataSource1.
+</summary>
+<remarks>
+Campo gerado automaticamente.
+Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+</remarks>
+</member>
+<member name="F:realapp.Fotografias._image1">
+<summary>
+Controle image1.
+</summary>
+<remarks>
+Campo gerado automaticamente.
+Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+</remarks>
+</member>
+<member name="F:realapp.Fotografias._image4">
+<summary>
+Controle image4.
+</summary>
+<remarks>
+Campo gerado automaticamente.
+Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+</remarks>
+</member>
+<member name="F:realapp.Fotografias._image5">
+<summary>
+Controle image5.
+</summary>
+<remarks>
+Campo gerado automaticamente.
+Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+</remarks>
+</member>
+<member name="F:realapp.Fotografias._image6">
+<summary>
+Controle image6.
+</summary>
+<remarks>
+Campo gerado automaticamente.
+Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+</remarks>
+</member>
+<member name="F:realapp.Fotografias._image7">
+<summary>
+Controle image7.
+</summary>
+<remarks>
+Campo gerado automaticamente.
+Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+</remarks>
+</member>
+<member name="F:realapp.Fotografias._image2">
+<summary>
+Controle image2.
+</summary>
+<remarks>
+Campo gerado automaticamente.
+Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+</remarks>
+</member>
+<member name="F:realapp.Fotografias._image9">
+<summary>
+Controle image9.
+</summary>
+<remarks>
+Campo gerado automaticamente.
+Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+</remarks>
+</member>
+<member name="F:realapp.Fotografias._image3">
+<summary>
+Controle image3.
+</summary>
+<remarks>
+Campo gerado automaticamente.
+Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+</remarks>
+</member>
+<member name="F:realapp.Fotografias._image8">
+<summary>
+Controle image8.
+</summary>
+<remarks>
+Campo gerado automaticamente.
+Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+</remarks>
+</member>
+<member name="F:realapp.Home._Head1">
+<summary>
+Controle Head1.
+</summary>
+<remarks>
+Campo gerado automaticamente.
+Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+</remarks>
+</member>
+<member name="F:realapp.Home._LoginName1">
+<summary>
+Controle LoginName1.
+</summary>
+<remarks>
+Campo gerado automaticamente.
+Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+</remarks>
+</member>
+<member name="F:realapp.Home._LoginStatus1">
+<summary>
+Controle LoginStatus1.
+</summary>
+<remarks>
+Campo gerado automaticamente.
+Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+</remarks>
+</member>
+<member name="T:realapp.realappDataSet">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:realapp.realappDataSet.LoginDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:realapp.realappDataSet.LoginRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:realapp.realappDataSet.LoginRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:realapp.realappDataSetTableAdapters.LoginTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:realapp.realappDataSetTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:realapp.realappDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(realapp.realappDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:realapp.realappDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(realapp.realappDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:realapp.realappDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(realapp.realappDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:realapp.realappDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:realapp.realappDataSetTableAdapters.TableAdapterManager.UpdateAll(realapp.realappDataSet)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:realapp.realappDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:realapp.realappDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="F:realapp.SiteMaster._head">
+<summary>
+Controle head.
+</summary>
+<remarks>
+Campo gerado automaticamente.
+Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+</remarks>
+</member>
+<member name="F:realapp.SiteMaster._MainContent">
+<summary>
+Controle MainContent.
+</summary>
+<remarks>
+Campo gerado automaticamente.
+Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+</remarks>
+</member>
+<member name="F:realapp.Testes._TextBox1">
+<summary>
+Controle TextBox1.
+</summary>
+<remarks>
+Campo gerado automaticamente.
+Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+</remarks>
+</member>
+<member name="F:realapp.Testes._GridView1">
+<summary>
+Controle GridView1.
+</summary>
+<remarks>
+Campo gerado automaticamente.
+Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+</remarks>
+</member>
+<member name="F:realapp.Testes._SqlDataSource1">
+<summary>
+Controle SqlDataSource1.
+</summary>
+<remarks>
+Campo gerado automaticamente.
+Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+</remarks>
+</member>
+<member name="F:realapp.Testes._txtEntidade">
+<summary>
+Controle txtEntidade.
+</summary>
+<remarks>
+Campo gerado automaticamente.
+Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+</remarks>
+</member>
+<member name="F:realapp.Site_Mobile._Head1">
+<summary>
+controle Head1.
+</summary>
+<remarks>
+Campo gerado automaticamente.
+Para modificar, mova a declaração de campo do arquivo do designer para o arquivo code-behind.
+</remarks>
+</member>
+<member name="F:realapp.Site_Mobile._HeadContent">
+<summary>
+Controle HeadContent.
+</summary>
+<remarks>
+Campo gerado automaticamente.
+Para modificar, mova a declaração de campo do arquivo do designer para o arquivo code-behind.
+</remarks>
+</member>
+<member name="F:realapp.Site_Mobile._form1">
+<summary>
+Controle form1.
+</summary>
+<remarks>
+Campo gerado automaticamente.
+Para modificar, mova a declaração de campo do arquivo do designer para o arquivo code-behind.
+</remarks>
+</member>
+<member name="F:realapp.Site_Mobile._FeaturedContent">
+<summary>
+Controle FeaturedContent.
+</summary>
+<remarks>
+Campo gerado automaticamente.
+Para modificar, mova a declaração de campo do arquivo do designer para o arquivo code-behind.
+</remarks>
+</member>
+<member name="F:realapp.Site_Mobile._MainContent">
+<summary>
+Controle MainContent.
+</summary>
+<remarks>
+Campo gerado automaticamente.
+Para modificar, mova a declaração de campo do arquivo do designer para o arquivo code-behind.
+</remarks>
+</member>
+<member name="F:realapp.Site_Mobile._ViewSwitcher1">
+<summary>
+controle ViewSwitcher1.
+</summary>
+<remarks>
+Campo gerado automaticamente.
+Para modificar, mova a declaração de campo do arquivo do designer para o arquivo code-behind.
+</remarks>
+</member>
+</members>
+</doc>

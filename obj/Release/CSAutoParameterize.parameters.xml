@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="DefaultConnection-Web.config Connection String" description="DefaultConnection A Cadeia de Conexão usada em web.config pelo aplicativo para acessar o banco de dados." defaultValue="Data Source=aplicacaoreal.database.windows.net,1433;Initial Catalog=realapp;User ID=pedro.chaves;Password=hrp.4991" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Pedro\\source\\repos\\realapp\\realapp\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
+  </parameter>
+  <parameter name="realappConnectionString-Web.config Connection String" description="realappConnectionString A Cadeia de Conexão usada em web.config pelo aplicativo para acessar o banco de dados." defaultValue="Data Source=aplicacaoreal.database.windows.net,1433;Initial Catalog=realapp;User ID=pedro.chaves;Password=hrp.4991" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Pedro\\source\\repos\\realapp\\realapp\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='realappConnectionString']/@connectionString" />
+  </parameter>
+</parameters>
